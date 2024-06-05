@@ -1,0 +1,12 @@
+from functools import reduce
+def my_map(fn, seq):
+    """Applies fn onto each element in seq and returns a list.
+    >>> my_map(lambda x: x*x, [1, 2, 3])
+    [1, 4, 9]
+    """
+    List = []
+    for i in seq:
+        List = List + fn(i)
+    return List
+
+print(reduce(lambda x,y: x+y, ("apple", " banana", " orange")))
