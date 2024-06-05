@@ -341,7 +341,7 @@ def sus_strategy(score, opponent_score, threshold=11, num_rolls=6):
 def final_strategy(score, opponent_score):
     """Write a brief description of your final strategy."""
     # BEGIN PROBLEM 12
-    if boar_brawl(score, opponent_score) > make_averaged(roll_dice)(6):
+    if boar_brawl(score, opponent_score) > make_averaged(roll_dice, 100)(6):
         return 0
     return 6
     # END PROBLEM 12
